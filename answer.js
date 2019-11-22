@@ -1,9 +1,12 @@
 // *** YOUR ANSWER BELOW ***
 
-function roundedDivision(x,y){
-    let divisor = x / y;
+function quotient(x,y){
+    let divide = x / y;
     let remainder = x % y;
-    let subtractor = remainder / y;
-    return divisor - subtractor;
+    let discard = remainder / y;
+    // divide - discard;
+    return (x-(x%y))/y;
 }
-console.log(roundedDivision(9,4));
+console.log(quotient(10,3));
+
+
